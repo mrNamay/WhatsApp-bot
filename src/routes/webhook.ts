@@ -35,7 +35,7 @@ const webhookRouter = express.Router();
  *         description: Message received and processed successfully
  */
 webhookRouter.post('/twilio', twilio.webhook(process.env.TWILIO_AUTH_TOKEN, {
-    validate: process.env.NODE_ENV === 'production'
+    validate: process.env.NODE_ENV === 'production'|| process.env.NODE_ENV === 'serverless',
 }), (req, res) => {
     const message = req.body.Body;
     const sender = req.body.From;

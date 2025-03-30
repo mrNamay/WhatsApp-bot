@@ -20,6 +20,7 @@
         "langchain": "^0.3.19",
         "mongodb": "^6.15.0",
         "mongoose": "^8.13.0",
+        "serverless-http": "^3.2.0",
         "swagger-jsdoc": "^6.2.8",
         "swagger-ui-express": "^5.0.1",
         "twilio": "^5.5.1",
